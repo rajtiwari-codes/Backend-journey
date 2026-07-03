@@ -1,0 +1,28 @@
+
+<%- include("includes/head.ejs"); %>
+
+
+<body>
+    <h2>This page belong to <%= username %></h2>
+    <button>Follow</button>
+    <button>Message</button>
+
+<!-- 8 and 9 for loop in ejs -->
+    <p>
+        followers : <%= data.followers %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;following : <%= 
+            data.following %>
+    </p>
+    <hr/>
+
+    <% for(let post of data.posts){ %>
+        <img src="<%=post.image %>" alt ="some image"/>
+        <p>
+            Likes : <%= post.Likes %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            comments : <%= post.comments %>
+        </p>
+    <%}%>
+
+    
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>
