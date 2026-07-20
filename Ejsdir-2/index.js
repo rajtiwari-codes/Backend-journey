@@ -32,7 +32,7 @@ app.listen(port,()=>{
 // app.get("/ig/:username",(req,res)=>{//username behav as aobject
 //     const followers=["adam","bob","raj","sam"];//8 for lopp in ejs
 //     let {username}=req.params; //we can acess a username
-//     res.render("instagram.ejs",{username,followers});
+//     res.render("instagram.ejs",{username,followers});//we pass username ,foloer in indtagram folder mei
 // }); 
 
 //for 9 we comment out 6 point 
